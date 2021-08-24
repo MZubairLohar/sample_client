@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+                        <!-- Custom -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Dash Board</title>
+</head>
+<body>
+    <div class="main_bdy">
+                        <!-- Navbar -->
+        <nav class=" navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler " type="button"
+                data-toggle='collapse' data-target='#navbarSupport'
+                aria-controls="navbarSupport"
+                aria-expanded="false"  aria-label="Toggle navigation"  >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupport">
+                    <ul class="navbar-nav m-auto " style="font-weight: bold;" >
+                        <li class="nav-item"><h3>
+                            <a class="nav-link" href="#">Home</a></h3></li>
+                        <li class="nav-item"><h3><a class="nav-link" href="#">Telegram</a></h3></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+                        <!-- Header -->
+        <div class="container py-5 text-center text-white" style="max-width: 500px; ">
+            <h1 class="heading" style="font-size: 64px; line-height: 76px; font-weight: bolder;" >DASH BOARD</h1>
+            <div class="d-flex justify-content-center pt-5">
+                <div class="input-group input-group-lg mb-3">
+                    <input type="text" class="form-control"
+                    placeholder="Enter Wallet Address">
+                    <button class="btn btn-warning" type="button"">
+                        submit
+                    </button>
+                </div>
+            </div>
+        </div>
+                        <!-- Middle  -->
+        <div class="container pb-5">
+            <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <i class="fas fa-coins "></i>
+                            <h4 class="">Your Holdings</h4>
+                            <h3><span id="total-hold">0.00</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <i class="fas fa-money-check-alt "></i>
+                            <h4 class="">Your Holdings</h4>
+                            <h3><span id="total-hold">0.00</span></h3>
+                        </div>
+                    </div>    
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <i class="fas fa-clock"></i>
+                            <h4 class="">Your Holdings</h4>
+                            <h3><span id="total-hold">0.00</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">        
+                        <div class="card">
+                            <i class="fas fa-coins "></i>
+                            <h4 class="">Your Holdings</h4>
+                            <h3><span id="total-hold">0.00</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 " >
+                        <div class="card" >
+                            <i class="fas fa-coins"></i>
+                            <h4 >Total Amount Paid</h4>
+                            <h3><span id="wallet-description">0.00</span></h3>
+                        </div>
+                    </div>
+                </div>
+        </div>  
+                            <!-- Footer  -->
+        <footer>
+            <div class="container py-5 text-center">
+                <h3 class="text-secondary">
+                    
+                    © 2021 FREEDOM BNB . All Rights Reserved.
+                </h3>
+            </div>
+        </footer>
+</div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="./index.js" ></script>
+</html>
